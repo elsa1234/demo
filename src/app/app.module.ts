@@ -1,16 +1,52 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
+import { Routes , RouterModule} from '@angular/router';
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { ServicesComponent } from './services/services.component';
+import { GallaryComponent } from './gallary/gallary.component';
+import { AboutComponent } from './about/about.component';
+import { TeamComponent } from './team/team.component';
+import { ClientComponent } from './client/client.component';
+import { ContactComponent } from './contact/contact.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { HomeComponent } from './home/home.component';
+import { CarouselModule } from 'angular4-carousel';
 
+const routes: Routes = [
+  {path: '', component: HomeComponent},
+  {path: 'home', component: HomeComponent},
+  {path: 'gallary', component: GallaryComponent},
+  {path: 'about', component: AboutComponent},
+  {path: 'contact', component: ContactComponent}
+];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    ServicesComponent,
+    GallaryComponent,
+    AboutComponent,
+    TeamComponent,
+    ClientComponent,
+    ContactComponent,
+    NavbarComponent,
+    HomeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(routes),
+    FormsModule,
+    HttpModule,
+    ReactiveFormsModule,
+    CarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

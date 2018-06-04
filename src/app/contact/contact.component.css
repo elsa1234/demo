@@ -1,0 +1,39 @@
+.section-heading{
+  color: #fff;
+}
+
+#contact{
+  background-color: #212529;
+  background-image: url("/assets/img/map-image.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 20px;
+
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+.form-group input,
+section#contact .form-group textarea {
+  padding: 20px;
+}
+.form-group input.form-control {
+  height: auto;
+}
+
+.form-group textarea.form-control {
+  height: 248px;
+}
+
+.form-control:focus {
+  border-color: #fed136;
+  box-shadow: none;
+}
+
+webkit-input-placeholder {
+  font-weight: 700;
+  color: #ced4da;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
