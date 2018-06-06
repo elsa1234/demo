@@ -16,13 +16,16 @@ import { ClientComponent } from './client/client.component';
 import { ContactComponent } from './contact/contact.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
-import { CarouselModule } from 'angular4-carousel';
+import { ProductComponent } from './product/product.component';
+import { TestimonialComponent } from './testimonial/testimonial.component';
+// import { CarouselModule } from 'angular4-carousel';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
-  {path: 'home', component: HomeComponent},
-  {path: 'gallary', component: GallaryComponent},
   {path: 'about', component: AboutComponent},
+  {path: 'services', component: ServicesComponent},
+  {path: 'gallary', component: GallaryComponent},
+  {path: 'team', component: TeamComponent},
   {path: 'contact', component: ContactComponent}
 ];
 
@@ -38,7 +41,9 @@ const routes: Routes = [
     ClientComponent,
     ContactComponent,
     NavbarComponent,
-    HomeComponent
+    HomeComponent,
+    ProductComponent,
+    TestimonialComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +51,7 @@ const routes: Routes = [
     FormsModule,
     HttpModule,
     ReactiveFormsModule,
-    CarouselModule,
+    // CarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

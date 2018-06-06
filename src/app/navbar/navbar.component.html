@@ -1,37 +1,4 @@
-<!-- <nav class="navbar navbar-inverse navbar-fixed-top navbar-shrink" id="mainNav">
-    <div class="container">
-      <div class="navbar-header">
-        <a class="navbar-brand js-scroll-trigger" href="#">
-          AGENCY
-        </a>
-      </div>
-      <button class="nav navbar-nav navbar-right navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="/" class="navbar-link js-scroll-trigger">Home</a></li>
-          <li><a href="#services" class="navbar-link">Services</a></li>
-          <li><a href="#" class="navbar-link">Gallary</a></li>
-          <li><a href="#" class="navbar-link">About us</a></li>
-          <li><a href="#" class="navbar-link">Contact us</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav> -->
-  <!-- <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">WebSiteName</a>
-        </div>
-        <ul class="nav navbar-nav">
-          <li *ngFor="let menu of menus" [routerLinkActive]="['active']"><a [routerLink]="[menu]">{{menu}}</a></li>
-        </ul>
-      </div>
-    </nav> -->
-
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+   <nav class="navbar navbar-fixed-top" id="mainNav">
         <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -39,11 +6,20 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-            <a class="navbar-brand" href="#">WebSiteName</a>
+          <a class="navbar-brand js-scroll-trigger" href="#" id="logo">
+              Propertyudyog.com
+          </a>
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
-                <li *ngFor="let menu of menus" [routerLinkActive]="['active']"><a [routerLink]="[menu]">{{menu}}</a></li>
+          <li><a href="#about" class="navbar-link js-scroll-trigger">About</a></li>
+          <li><a href="#services" class="navbar-link">Services</a></li>
+          <li><a href="#gallary" class="navbar-link">Gallary</a></li>
+          <li><a href="#team" class="navbar-link">Team</a></li>
+          <li><a href="#contact" class="navbar-link">Contact us</a></li>
+          <li><a href="./Neha Nandanwar-Resume.pdf" class="navbar-link">
+            <i class="fa fa-angle-down"></i>
+              Resume</a></li>
             </ul>
           </div>
         </div>
